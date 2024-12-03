@@ -61,5 +61,8 @@ function showTemperature(response) {
 
   let windSpeedElement = document.querySelector("#wind-speed");
   windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
+
+  let iconElement = document.querySelector("#icon");
+  iconElement.innerHTML = `<img src= "${response.data.condition.icon_url}" class="weather-app-icon" />`;
 }
 
